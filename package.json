@@ -1,0 +1,23 @@
+{
+  "name": "ejercicioimplementacion02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abeAndes/EjercicioImplementacion02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abeAndes/EjercicioImplementacion02/issues"
+  },
+  "homepage": "https://github.com/abeAndes/EjercicioImplementacion02#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
