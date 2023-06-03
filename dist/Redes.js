@@ -1,6 +1,7 @@
 export class Redes {
-    constructor(nombre, descripcion, streamer) {
+    constructor(nombre, red, descripcion, streamer) {
         this.nombre = nombre;
+        this.red = red;
         this.descripcion = descripcion;
         this.streamer = streamer;
         this.AgregarStreamer();

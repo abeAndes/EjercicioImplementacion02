@@ -3,6 +3,8 @@ import { Categoria } from "./Categoria.js";
 import { Streamer } from "./Streamer.js";
 import { Canal } from "./Canal.js";
 
+export var ListaE:EnVivo[]=[];
+
 export class EnVivo{
 
     nombre:string;
@@ -19,6 +21,7 @@ export class EnVivo{
         this.AgregarCanal();
         this.AgregarCategoria();
         this.AgregarStreamer();
+        this.ListarEnvivo();
     }
 
     AgregarCanal(){
@@ -26,10 +29,22 @@ export class EnVivo{
     }
 
     AgregarCategoria(){
-        this.categoria[this.categoria.length].Envivos.push(this);
+        for (let i = 0; i < this.categoria.length; i++) {
+            this.categoria[i].Envivos.push(this);        
+        }
+        
     }
 
     AgregarStreamer(){
         this.streamer.envivo.push(this);
+    }
+
+    ListarEnvivo(){
+        ListaE.push(this);
+    }
+
+    Detalles(){
+        let categorias = this.categoria.map(Cat=>Cat.nombre)
+        console.log(" "+this.nombre+" "+this.streamer+" "+this.canal+" "+categorias);
     }
 }

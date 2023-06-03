@@ -1,3 +1,4 @@
+export var ListaE = [];
 export class EnVivo {
     constructor(nombre, streamer, canal, ...categoria) {
         this.categoria = [];
@@ -8,15 +9,25 @@ export class EnVivo {
         this.AgregarCanal();
         this.AgregarCategoria();
         this.AgregarStreamer();
+        this.ListarEnvivo();
     }
     AgregarCanal() {
         this.canal.envivos.push(this);
     }
     AgregarCategoria() {
-        this.categoria[this.categoria.length].Envivos.push(this);
+        for (let i = 0; i < this.categoria.length; i++) {
+            this.categoria[i].Envivos.push(this);
+        }
     }
     AgregarStreamer() {
         this.streamer.envivo.push(this);
+    }
+    ListarEnvivo() {
+        ListaE.push(this);
+    }
+    Detalles() {
+        let categorias = this.categoria.map(Cat => Cat.nombre);
+        console.log(" " + this.nombre + " " + this.streamer + " " + this.canal + " " + categorias);
     }
 }
 //# sourceMappingURL=EnVivo.js.map
