@@ -1,1 +1,1 @@
-{"version":3,"file":"Patrocinador.js","sourceRoot":"","sources":["../Patrocinador.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,YAAY;IAIrB,YAAY,MAAa;QACrB,IAAI,CAAC,MAAM,GAAC,MAAM,CAAC;IACvB,CAAC;CACJ"}
+{"version":3,"file":"Patrocinador.js","sourceRoot":"","sources":["../Patrocinador.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,YAAY;IAKrB,YAAY,MAAa;QACrB,IAAI,CAAC,MAAM,GAAC,MAAM,CAAC;QACnB,IAAI,CAAC,WAAW,GAAC,EAAE,CAAC;IACxB,CAAC;CACJ"}

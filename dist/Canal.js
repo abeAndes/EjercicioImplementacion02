@@ -5,6 +5,10 @@ export class Canal {
         this.descripcion = descripcion;
         this.plataforma = plataforma;
         this.envivos = [];
+        this.AgregarPlat();
+    }
+    AgregarPlat() {
+        this.plataforma.canales.push(this);
     }
 }
 //# sourceMappingURL=Canal.js.map
