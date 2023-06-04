@@ -44,7 +44,16 @@ export class EnVivo{
     }
 
     Detalles(){
-        let categorias = this.categoria.map(Cat=>Cat.nombre)
-        console.log(" "+this.nombre+" "+this.streamer+" "+this.canal+" "+categorias);
+        let categorias = this.categoria.map(Cat=>"\n"+Cat.nombre)
+        console.log(" Nombre: "+this.nombre+" Streamer "+this.streamer.nickname+" Canal: "+this.canal.nombre+" Categorias: "+categorias);
     }
+}
+
+export function ImprimirLista(){
+    let list = ListaE.map(list=>list.nombre);
+    console.log(list);        
+}
+
+export function AgregarE(nombre:string,streamer:Streamer,canal:Canal,...categoria:Categoria[]){
+    const Envivo21 = new EnVivo (nombre=nombre,streamer=streamer,canal=canal,...categoria=categoria);
 }

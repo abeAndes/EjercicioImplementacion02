@@ -1,4 +1,4 @@
-export var ListaP;
+export var ListaP = [];
 export class Plataforma {
     constructor(nombre, logo, descripcion, patrocinador) {
         this.nombre = nombre;
@@ -13,10 +13,18 @@ export class Plataforma {
         ListaP.push(this);
     }
     Detalles() {
-        console.log(" " + this.nombre + " " + this.logo + " " + this.descripcion + " " + this.patrocinador + " " + this.canales);
+        let can = this.canales.map(can => "\n" + can.nombre);
+        console.log("Nombre: " + this.nombre + ", Logo: " + this.logo + ", Descripción: " + this.descripcion + ", Patrocinador: " + this.patrocinador.nombre + ", Canales: " + can);
     }
     AgregarPat() {
         this.patrocinador.plataformas.push(this);
     }
+}
+export function ImprimirLista() {
+    let list = ListaP.map(list => list.nombre);
+    console.log(list);
+}
+export function AgregarP(nombre, logo, descripcion, patrocinador) {
+    const Plataforma6 = new Plataforma(nombre = nombre, logo = logo, descripcion = descripcion, patrocinador = patrocinador);
 }
 //# sourceMappingURL=Plataforma.js.map

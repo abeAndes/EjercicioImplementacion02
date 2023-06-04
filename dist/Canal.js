@@ -17,8 +17,15 @@ export class Canal {
         ListaC.push(this);
     }
     Detalles() {
-        let D_Envivos = this.envivos.map(Env => Env.nombre);
-        console.log(" " + this.nombre + " " + this.banner + " " + this.descripcion + " " + this.plataforma + " " + D_Envivos);
+        let D_Envivos = this.envivos.map(Env => "\n" + Env.nombre);
+        console.log("Nombre: " + this.nombre + " Banner: " + this.banner + " Descripción: " + this.descripcion + " Plataforma: " + this.plataforma.nombre + " Streams: " + D_Envivos);
     }
+}
+export function ImprimirLista() {
+    let list = ListaC.map(list => list.nombre);
+    console.log(list);
+}
+export function AgregarC(nombre, banner, descripcion, plataforma) {
+    const canal12 = new Canal(nombre = nombre, banner = banner, descripcion = descripcion, plataforma = plataforma);
 }
 //# sourceMappingURL=Canal.js.map

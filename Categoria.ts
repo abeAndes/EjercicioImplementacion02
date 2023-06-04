@@ -3,15 +3,19 @@ import { EnVivo } from "./EnVivo.js";
 export class Categoria{
 
     nombre:string;
+    actividades:string;
+    espacio:string;
     imagen:string;
-    descripcion:string;
+    tema:string;
     Envivos:EnVivo[];
 
-    constructor(nombre:string,imagen:string,descripcion:string){
+    constructor(nombre:string,actividades:string,espacio:string,imagen:string,tema:string){
 
+        this.actividades=actividades;
+        this.espacio=espacio;
         this.nombre=nombre;
         this.imagen=imagen;
-        this.descripcion=descripcion;
+        this.tema=tema;
         this.Envivos=[];
     }
    }

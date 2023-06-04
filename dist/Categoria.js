@@ -1,8 +1,10 @@
 export class Categoria {
-    constructor(nombre, imagen, descripcion) {
+    constructor(nombre, actividades, espacio, imagen, tema) {
+        this.actividades = actividades;
+        this.espacio = espacio;
         this.nombre = nombre;
         this.imagen = imagen;
-        this.descripcion = descripcion;
+        this.tema = tema;
         this.Envivos = [];
     }
 }
