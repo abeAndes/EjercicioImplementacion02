@@ -47,4 +47,5 @@ export function ImprimirLista(){
 
 export function AgregarC(nombre:string,banner:string,descripcion:string,plataforma:Plataforma){
     const canal12 = new Canal ( nombre=nombre,banner=banner,descripcion=descripcion,plataforma=plataforma);
+    console.log("Canal agregado con exito");
 }

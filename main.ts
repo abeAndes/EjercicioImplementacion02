@@ -46,11 +46,11 @@ const categoria2 = new Categoria("Naturaleza","Vida salvaje","Aire libre","Image
 const categoria3 = new Categoria("Deportes","Deportes y resultados","Mixto","Imagen","Reporte de disciplinas de elite");
 const categoria4 = new Categoria("Vintage","Cosas del pasado e historia","Interior","Imagen","Eventos historicos importantes y antigüedades");
 
-const streamer1 = new Streamer("Juan",    "Juanmax","Gamer",canal1,canal2,canal11);
+const streamer1 = new Streamer("Juan","Juanmax","Gamer",canal1,canal2,canal11);
 const streamer2 = new Streamer("Santiago","Santix","Survivor",canal3,canal4);
-const streamer3 = new Streamer("Andres",  "LaRegla","Deportista",canal6,canal10);
-const streamer4 = new Streamer("Leidy",   "Constructor","Arquitecta",canal9);
-const streamer5 = new Streamer("Maria",   "Mary2000","Historiadora",canal8,canal5,canal7);
+const streamer3 = new Streamer("Andres","LaRegla","Deportista",canal6,canal10);
+const streamer4 = new Streamer("Leidy","Constructor","Arquitecta",canal9);
+const streamer5 = new Streamer("Maria","Mary2000","Historiadora",canal8,canal5,canal7);
 
 const red1 = new Redes("Juanmax","Instagram","",streamer1);
 const red2 = new Redes("Juanmax","Facebook","",streamer1);
@@ -128,6 +128,9 @@ streamer1.AgregarCanal(canal8);
 
 //stream a streamer
 streamer1.AgregarStream(envivo15);
+
+console.log("---------------------------Se vuelven a realizar las mismas consultas para verificar que las agregaciones se hayan realizado de forma exitosa---------------------------");
+
 
 //Verificaciones de los cambios
 //Plataformas

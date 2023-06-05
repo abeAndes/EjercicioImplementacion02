@@ -1,0 +1,28 @@
+body{
+    background-image: url(Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+label{
+    color:white;
+    background-color:rgba(137, 43, 226, 0.33);
+    font-size: xx-large;
+}
+form{
+    background-color:transparent;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    
+}
+button{
+    color: white;
+    border-radius: 30%;
+    background-color: rgba(205, 50, 63, 0.905);
+}
+a{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.727);
+}

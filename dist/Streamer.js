@@ -46,5 +46,6 @@ export function ImprimirLista() {
 }
 export function AgregarS(nombre, nickname, descripcion, ...canales) {
     const streamer6 = new Streamer(nombre = nombre, nickname = nickname, descripcion = descripcion, ...canales = canales);
+    console.log("Streamer agregado con exito");
 }
 //# sourceMappingURL=Streamer.js.map

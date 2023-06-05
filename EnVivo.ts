@@ -56,4 +56,5 @@ export function ImprimirLista(){
 
 export function AgregarE(nombre:string,streamer:Streamer,canal:Canal,...categoria:Categoria[]){
     const Envivo21 = new EnVivo (nombre=nombre,streamer=streamer,canal=canal,...categoria=categoria);
+    console.log("Stream agregado con exito");
 }

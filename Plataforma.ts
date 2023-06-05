@@ -44,4 +44,6 @@ export function ImprimirLista(){
 
 export function AgregarP(nombre:string,logo:string,descripcion:string,patrocinador:Patrocinador){
     const Plataforma6 = new Plataforma(nombre=nombre,logo=logo,descripcion=descripcion,patrocinador=patrocinador)
+    console.log("Plataforma agregada con exito");
+    
 }

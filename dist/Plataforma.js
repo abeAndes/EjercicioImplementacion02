@@ -26,5 +26,6 @@ export function ImprimirLista() {
 }
 export function AgregarP(nombre, logo, descripcion, patrocinador) {
     const Plataforma6 = new Plataforma(nombre = nombre, logo = logo, descripcion = descripcion, patrocinador = patrocinador);
+    console.log("Plataforma agregada con exito");
 }
 //# sourceMappingURL=Plataforma.js.map

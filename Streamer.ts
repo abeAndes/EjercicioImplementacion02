@@ -71,4 +71,5 @@ export function  ImprimirLista(){
 
 export function AgregarS(nombre:string,nickname:string,descripcion:string,...canales:Canal[]){
     const streamer6 = new Streamer (nombre=nombre,nickname=nickname,descripcion=descripcion,...canales=canales);
+    console.log("Streamer agregado con exito");
 }

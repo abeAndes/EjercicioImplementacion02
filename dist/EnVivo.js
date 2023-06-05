@@ -36,5 +36,6 @@ export function ImprimirLista() {
 }
 export function AgregarE(nombre, streamer, canal, ...categoria) {
     const Envivo21 = new EnVivo(nombre = nombre, streamer = streamer, canal = canal, ...categoria = categoria);
+    console.log("Stream agregado con exito");
 }
 //# sourceMappingURL=EnVivo.js.map

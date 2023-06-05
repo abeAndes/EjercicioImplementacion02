@@ -111,6 +111,7 @@ AgregarC("Purificando agua", "Banner", "Supervivencia al aire libre", plataforma
 streamer1.AgregarCanal(canal8);
 //stream a streamer
 streamer1.AgregarStream(envivo15);
+console.log("---------------------------Se vuelven a realizar las mismas consultas para verificar que las agregaciones se hayan realizado de forma exitosa---------------------------");
 //Verificaciones de los cambios
 //Plataformas
 IP();
